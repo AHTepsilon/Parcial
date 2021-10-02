@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
                     Log.d(">>>" , json);
 
-                    sendMessage("test message");
+                    sendMessage(json);
                 }
         );
 
