@@ -73,6 +73,13 @@ public class MainActivity extends AppCompatActivity {
                 }
         );
 
+        deleteBtn.setOnClickListener(
+                (view)->
+                {
+                    eraseTheStuff("delete");
+                }
+        );
+
         redBtn.setOnClickListener(
                 (view) ->
                 {
@@ -147,6 +154,23 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                 }).start();
+    }
+
+    public void eraseTheStuff(String msg)
+    {
+        new Thread(
+                ()->
+                {
+                    try {
+                        writer.write(msg + "\n");
+                        writer.flush();
+                    } catch (IOException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+                }
+        ).start();
+
     }
 
 }
