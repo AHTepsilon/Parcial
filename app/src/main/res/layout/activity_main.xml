@@ -48,7 +48,7 @@
         android:layout_width="290dp"
         android:layout_height="49dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,7 +73,7 @@
         android:layout_height="48dp"
         android:ems="10"
         android:hint="Y"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.799"
@@ -87,7 +87,7 @@
         android:layout_height="48dp"
         android:ems="10"
         android:hint="X"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
@@ -132,8 +132,11 @@
 
     <Button
         android:id="@+id/greenButton"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="56dp"
         android:layout_height="59dp"
+        android:background="#188E03"
+        app:backgroundTint="#188E03"
         android:text="G"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -143,8 +146,11 @@
 
     <Button
         android:id="@+id/redButton"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="56dp"
         android:layout_height="59dp"
+        android:background="#FF0000"
+        app:backgroundTint="#FF0000"
         android:text="R"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -155,8 +161,11 @@
 
     <Button
         android:id="@+id/blueButton"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="56dp"
         android:layout_height="59dp"
+        android:background="#2196F3"
+        app:backgroundTint="#2196F3"
         android:text="B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
